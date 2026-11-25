@@ -1,5 +1,5 @@
-import { check, error, verdict, z } from '@cairul/plugin-kit';
-import { junit, testPlugin } from '@cairul/plugin-kit/reports';
+import { check, error, verdict, z } from '@cairul/pdk';
+import { junit, testPlugin } from '@cairul/pdk/reports';
 
 const reports = testPlugin('appium.passed', { junit });
 const endpoint = z.url({ protocol: /^https?$/ });
